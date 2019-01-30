@@ -1,0 +1,66 @@
+body {
+    background-color: #000010;
+    max-width: 1050px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	overflow: none;
+}
+
+h1 {
+    color: #FFE4C4;
+}
+
+h2 {
+color: #FFE4C4;
+}
+
+h3 {
+color: #FFE4C4;
+}
+
+h4 {
+color: #FFE4C4;
+}
+
+h5 {
+color: #FFE4C4;
+}
+
+h6 {
+color: #FFE4C4;
+}
+
+p  {
+color: #FFE4C4;
+}
+
+pre  {
+    color: #FFE4C4;
+}
+code  {
+    color: #FFE4C4;
+}
+div {
+    color: #FFE4C4;
+}
+iframe {
+    color: #FFE4C4;
+}
+
+form {
+    color: #FFE4C4;
+}
+
+
+a  {
+color: #48D1CC;
+}
+
+
+#viewfile  p {
+    font: monospace;
+    font-size: 14px;
+    background-color: #F7BE81;
+}
+
