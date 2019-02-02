@@ -81,6 +81,7 @@ pre {
 #viewfile  p {
     font: monospace;
     font-size: 14px;
-    background-color: #F7BE81;
+    /*background-color: #F7BE81; */
+    background-color: #F2D2A7;
 }
 
