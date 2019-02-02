@@ -19,19 +19,23 @@
 
 </br>
 
-<h3>About change ringing patterns</h3>
+<h2>About change ringing patterns</h2>
 <p>
-A change ringing pattern with n bells is a sequence of permutations of the set
+A <b><em>change ringing pattern with n bells</em></b> is a sequence of permutations of the set
 {1,2,...,n-1,n} that satisfies the following criteria.
 </p>
 
 <ol>
     <li>
-        Sequence starts with the permutation
+        The sequence must start with the permutation
         <pre><code> 1,2,...,(n-1),n </code></pre>
     </li>
     <li>
-        No permutation can be repeated.^[*]
+        The sequence must end with the same permutation that it started with.
+    </li>
+    <li>
+        No permutation can be repeated except for the starting permutation
+        which must be repeated once in accordance with criterion 2.
     </li>
     <li>
         The position of each bell from one permutation to the next can stay the
@@ -39,30 +43,37 @@ A change ringing pattern with n bells is a sequence of permutations of the set
     </li>
 </ol>
 
-
-
 <p>
-Additional criteria that makes the patterns nicer are
+An optional criterion is
 </p>
-
-<ol start="4">
+<ol start="5">
     <li>
-        Sequence ends with a permutation which can be immediately changed into the starting permutation.
-    </li>
-    <li>
-        Must visit all permutations, i.e. pattern has length factorial(n).
+        The sequence must contain all permutations, i.e. pattern has length factorial(n).
     </li>
 </ol>
 
+<hr noshade="">
+
 <p>
-All change ringing patterns on this page satisfies criteria 4. In addition to listing
-patterns that also satisfy criteria 5, which we call <b><em>full patterns</em></b>,
-we also list patterns that does not satisfy criteria 5. We call these
-<b><em>short patterns</em></b> and try to categorize them by their
-length which will always be less than factorial(n). This gives n-1 categories
-of short patterns. We will not bother listing the trivial pattern of length 1,
-and we will omit counting the ending permutation when we have appended the
-starting pattern for aesthetic completion when criteria 4 is satisfied.
+We define the <b><em>length</em></b> of a change ringing pattern as the number
+of unique permutations in the pattern.
+</p>
+
+<p>
+A change ringing pattern that satisfy criterion 5 is called a
+<b><em>full pattern</em></b>.
+</p>
+
+<p>
+A change ringing pattern that does not satisfy criterion 5 is called a
+<b><em>short pattern</em></b>.
+</p>
+
+<p>
+We will list both full and short patterns. We will categorize short patterns by
+their length. Short patterns have length < factorial(n). This gives n-1
+categories of short patterns. We will not bother listing patterns of length
+0 (empty) and length 1 (only the starting permutation).
 </p>
 
 
@@ -71,13 +82,6 @@ starting pattern for aesthetic completion when criteria 4 is satisfied.
 <a href="change4.html">n=4</a>
 </center>
 
-
-
-<hr noshade="">
-<footer>
-[*] = [But we append at the very end the starting permutation for aesthetic completion if criteria 4
-is satisfied.]
-</footer>
 
 </body>
 
