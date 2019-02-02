@@ -1,6 +1,6 @@
 body {
     background-color: #000010;
-    max-width: 1050px;
+    max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
@@ -35,12 +35,6 @@ p  {
 color: #FFE4C4;
 }
 
-pre  {
-    color: #FFE4C4;
-}
-code  {
-    color: #FFE4C4;
-}
 div {
     color: #FFE4C4;
 }
@@ -51,12 +45,38 @@ iframe {
 form {
     color: #FFE4C4;
 }
+li {
+    color: #FFE4C4;
+}
+ul {
+    color: #FFE4C4;
+}
+ol {
+    color: #FFE4C4;
+}
+footer {
+    color: #FFE4C4;
+}
 
 
 a  {
 color: #48D1CC;
 }
 
+code {
+	color: #FFE4C4;
+    overflow-x: auto;
+    /* background: #1d2021; */
+}
+
+pre {
+    background: #000040;
+    border: 1px solid #48D1CC;
+    border-radius: 4px;
+    padding: 5px;
+    display: block;
+    /* background: #1d2021; */
+}
 
 #viewfile  p {
     font: monospace;

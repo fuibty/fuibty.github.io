@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+<title>About change ringing patterns</title>
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+</head>
+
+<body>
+
+<p>
+<form method="get" action="index.html"> <button type="submit">Main</button> </form>
+<form method="get" action="permutations.html"> <button type="submit">Permutations</button> </form>
+</p>
+
+
+</br>
+
+<h3>About change ringing patterns</h3>
+<p>
+A change ringing pattern with n bells is a sequence of permutations of the set
+{1,2,...,n-1,n} that satisfies the following criteria.
+</p>
+
+<ol>
+    <li>
+        Sequence starts with the permutation
+        <pre><code> 1,2,...,(n-1),n </code></pre>
+    </li>
+    <li>
+        No permutation can be repeated.^[*]
+    </li>
+    <li>
+        The position of each bell from one permutation to the next can stay the
+        same or move by at most one place.
+    </li>
+</ol>
+
+
+
+<p>
+Additional criteria that makes the patterns nicer are
+</p>
+
+<ol start="4">
+    <li>
+        Sequence ends with a permutation which can be immediately changed into the starting permutation.
+    </li>
+    <li>
+        Must visit all permutations, i.e. pattern has length factorial(n).
+    </li>
+</ol>
+
+<p>
+All change ringing patterns on this page satisfies criteria 4. In addition to listing
+patterns that also satisfy criteria 5, which we call <b><em>full patterns</em></b>,
+we also list patterns that does not satisfy criteria 5. We call these
+<b><em>short patterns</em></b> and try to categorize them by their
+length which will always be less than factorial(n). This gives n-1 categories
+of short patterns. We will not bother listing the trivial pattern of length 1,
+and we will omit counting the ending permutation when we have appended the
+starting pattern for aesthetic completion when criteria 4 is satisfied.
+</p>
+
+
+<center>
+<a href="change3.html">n=3</a></br>
+<a href="change4.html">n=4</a>
+</center>
+
+
+
+<hr noshade="">
+<footer>
+[*] = [But we append at the very end the starting permutation for aesthetic completion if criteria 4
+is satisfied.]
+</footer>
+
+</body>
+
+</html>
