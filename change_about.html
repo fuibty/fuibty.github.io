@@ -21,8 +21,9 @@
 
 <h2>About change ringing patterns</h2>
 <p>
-A <b><em>change ringing pattern with n bells</em></b> is a sequence of permutations of the set
-{1,2,...,n-1,n} that satisfies the following criteria.
+A <b><em>change ringing pattern for n bells</em></b> can be perfectly
+represented by a sequence of permutations of the set {1,2,...,n-1,n} that
+satisfies the following criteria.
 </p>
 
 <ol>
@@ -35,7 +36,7 @@ A <b><em>change ringing pattern with n bells</em></b> is a sequence of permutati
     </li>
     <li>
         No permutation can be repeated except for the starting permutation
-        which must be repeated once in accordance with criterion 2.
+        which must be repeated exactly once in accordance with criterion 2.
     </li>
     <li>
         The position of each bell from one permutation to the next can stay the
@@ -44,13 +45,15 @@ A <b><em>change ringing pattern with n bells</em></b> is a sequence of permutati
 </ol>
 
 <p>
-An optional criterion is
+An optional and very common criterion is
 </p>
+
 <ol start="5">
     <li>
         The sequence must contain all permutations, i.e. pattern has length factorial(n).
     </li>
 </ol>
+
 
 <hr noshade="">
 
@@ -60,7 +63,7 @@ of unique permutations in the pattern.
 </p>
 
 <p>
-A change ringing pattern that satisfy criterion 5 is called a
+A change ringing pattern that satisfies criterion 5 is called a
 <b><em>full pattern</em></b>.
 </p>
 
@@ -71,9 +74,9 @@ A change ringing pattern that does not satisfy criterion 5 is called a
 
 <p>
 We will list both full and short patterns. We will categorize short patterns by
-their length. Short patterns have length < factorial(n). This gives n-1
+their length. Short patterns have length < factorial(n). This gives factorial(n)-1
 categories of short patterns. We will not bother listing patterns of length
-0 (empty) and length 1 (the starting permutation).
+0 (empty) or length 1 (the starting permutation).
 </p>
 
 
@@ -81,6 +84,8 @@ categories of short patterns. We will not bother listing patterns of length
 <a href="change3.html">n=3</a></br>
 <a href="change4.html">n=4</a>
 </center>
+
+
 
 
 </body>

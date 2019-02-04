@@ -85,3 +85,8 @@ pre {
     background-color: #F2D2A7;
 }
 
+.ImageBorder {
+    border-style:solid;
+    border-width: 2px;
+    border-color: #F2D2A7;
+}
