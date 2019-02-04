@@ -1,5 +1,13 @@
+:root {
+    --textcol: #FFE4C4;
+	--bg: #000010;
+    --linkcol: #48D1CC;
+    --linkcolalt: #5982c1;
+}
+
+
 body {
-    background-color: #000010;
+    background-color: var(--bg);
     max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
@@ -8,70 +16,73 @@ body {
 }
 
 h1 {
-    color: #FFE4C4;
+    color: var(--textcol);
 }
 
 h2 {
-color: #FFE4C4;
+color: var(--textcol);
 }
 
 h3 {
-color: #FFE4C4;
+color: var(--textcol);
 }
 
 h4 {
-color: #FFE4C4;
+color: var(--textcol);
 }
 
 h5 {
-color: #FFE4C4;
+color: var(--textcol);
 }
 
 h6 {
-color: #FFE4C4;
+color: var(--textcol);
 }
 
 p  {
-color: #FFE4C4;
+color: var(--textcol);
 }
 
 div {
-    color: #FFE4C4;
+    color: var(--textcol);
 }
 iframe {
-    color: #FFE4C4;
+    color: var(--textcol);
 }
 
 form {
-    color: #FFE4C4;
+    color: var(--textcol);
 }
 li {
-    color: #FFE4C4;
+    color: var(--textcol);
 }
 ul {
-    color: #FFE4C4;
+    color: var(--textcol);
 }
 ol {
-    color: #FFE4C4;
+    color: var(--textcol);
 }
 footer {
-    color: #FFE4C4;
+    color: var(--textcol);
 }
 
 
 a  {
-color: #48D1CC;
+color: var(--linkcol);
+}
+a:hover {
+    color: var(--linkcolalt);
 }
 
 code {
-	color: #FFE4C4;
+	color: var(--textcol);
     overflow-x: auto;
     /* background: #1d2021; */
 }
 
 pre {
     background: #000040;
-    border: 1px solid #48D1CC;
+    border: 1px solid var(--linkcol);
     border-radius: 4px;
     padding: 5px;
     display: block;
@@ -88,5 +99,5 @@ pre {
 .ImageBorder {
     border-style:solid;
     border-width: 2px;
-    border-color: #F2D2A7;
+    border-color: var(--textcol);
 }
