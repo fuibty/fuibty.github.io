@@ -21,9 +21,9 @@
 
 <h2>About change ringing patterns</h2>
 <p>
-A <b><em>change ringing pattern for n bells</em></b> can be perfectly
-represented by a sequence of permutations of the set {1,2,...,n-1,n} that
-satisfies the following criteria.
+Let n be a positive integer. A <b><em>change ringing pattern for n
+bells</em></b> can be represented by a sequence of permutations of
+the set {1,2,...,n-1,n} that satisfies the following criteria.
 </p>
 
 <ol>
@@ -36,7 +36,8 @@ satisfies the following criteria.
     </li>
     <li>
         No permutation can be repeated except for the starting permutation
-        which must be repeated exactly once in accordance with criterion 2.
+        which can be repeated at most once at the end of the pattern to
+        accommodate criterion 2.
     </li>
     <li>
         The position of each bell from one permutation to the next can stay the
@@ -74,13 +75,23 @@ A change ringing pattern that does not satisfy criterion 5 is called a
 
 <p>
 We will list both full and short patterns. We will categorize short patterns by
-their length. Short patterns have length < factorial(n). This gives factorial(n)-1
-categories of short patterns. We will not bother listing patterns of length
-0 (empty) or length 1 (the starting permutation).
+their length. Short patterns have length less than factorial(n). This gives factorial(n)-1
+categories of short patterns. There is only one pattern of length 1 for any n, namely
+the pattern consisting solely the starting permutation. There are no patterns of
+length 0 since all patterns must at least have the starting permutation (criterion 1).
+</p>
+
+<p>
+Now, remember that n is a positive integer, hence per definition there are no
+change ringing pattern for 0 bells. What is the reason for this restriction?
+Imagine a pattern for 0 bells. Since there are no bells to permute, there
+are no patterns of any length.
 </p>
 
 
 <center>
+<a href="change1.html">n=1</a></br>
+<a href="change2.html">n=2</a></br>
 <a href="change3.html">n=3</a></br>
 <a href="change4.html">n=4</a>
 </center>

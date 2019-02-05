@@ -1,3 +1,5 @@
+Number of patterns =  720
+
 123
 213
 231
