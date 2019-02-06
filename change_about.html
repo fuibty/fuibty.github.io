@@ -57,34 +57,50 @@ An optional and very common criterion is
 
 <hr noshade="">
 
+
+<p>
+We define a
+<b><em>full pattern</em></b>
+as a pattern that satisfies criterion 5.
+</p>
+
+
+<p>
+We define a
+<b><em>short pattern</em></b>
+as a pattern that does not satisfy criterion 5.
+</p>
+
+
 <p>
 We define the <b><em>length</em></b> of a change ringing pattern as the number
 of unique permutations in the pattern.
 </p>
 
+
 <p>
-A change ringing pattern that satisfies criterion 5 is called a
-<b><em>full pattern</em></b>.
+A full pattern contains all permutations. There are factorial(n) permutations
+of n bells, so the length of a full pattern is always factorial(n).
 </p>
 
 <p>
-A change ringing pattern that does not satisfy criterion 5 is called a
-<b><em>short pattern</em></b>.
+A short pattern does not contain all permutations, hence it has a length less
+than factorial(n).
 </p>
 
 <p>
-We will list both full and short patterns. We will categorize short patterns by
-their length. Short patterns have length less than factorial(n). This gives factorial(n)-1
-categories of short patterns. There is only one pattern of length 1 for any n, namely
-the pattern consisting solely the starting permutation. There are no patterns of
-length 0 since all patterns must at least have the starting permutation (criterion 1).
+We will list both full and short patterns on this page. We will categorize
+patterns by their length. There is only one pattern of length 1 for any n,
+namely the pattern consisting solely the starting permutation. There are no
+patterns of length 0 since all patterns must at least have the starting
+permutation (criterion 1).
 </p>
 
 <p>
-Now, remember that n is a positive integer, hence per definition there are no
-change ringing pattern for 0 bells. What is the reason for this restriction?
-Imagine a pattern for 0 bells. Since there are no bells to permute, there
-are no patterns of any length.
+What about patterns with 0 bells? Remember that n is a positive integer, hence
+per definition there are no change ringing pattern for 0 bells. What is the
+reason for this restriction?  Imagine a pattern for 0 bells. Since there are no
+bells to permute, there are no patterns of any length.
 </p>
 
 
