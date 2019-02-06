@@ -1,7 +1,6 @@
 # coding=utf-8
 import time
 import sys
-import numpy as np
 
 from findN4 import find
 
@@ -172,7 +171,7 @@ if n == 1:
     patterns = [0]
 else:
     t0 = time.process_time()
-    patterns = find(rule,oneAway,n)
+    patterns = find(rule,n)
     t1 = time.process_time()
     t = t1-t0
 

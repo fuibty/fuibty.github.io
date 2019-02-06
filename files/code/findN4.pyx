@@ -5,20 +5,24 @@
 #   python setup.py build_ext --inplace
 
 
-def find(list rule,list oneAway,int n):
+def find(list rule_init,int n):
 
     print('Looking for patterns ...')
     print('Counting to 1')
 
 
-    cdef int s,choice,temp,new
+    cdef int s
+    cdef int choice
+    cdef int temp
+    cdef int new
     cdef bint broken
-    cdef list patterns
     cdef list P
-    cdef list r
-    #cdef vector[int] P
-    #cdef int[] P
-    #cdef vector[list] patterns
+    cdef int r[4][3]
+    cdef int rule[4][24]
+
+    for i in range(4):
+        for j in range(24):
+            rule[i][j] = rule_init[i][j]
 
     s = 0
 
@@ -47,8 +51,8 @@ def find(list rule,list oneAway,int n):
                     break
                 P.append(new)
             if not broken:
-                #if (new in oneAway):
                 if P[-1] > 19:
                     patterns.append(P)
         print('%d/4' % (i+1))
     return patterns
+
