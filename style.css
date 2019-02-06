@@ -65,6 +65,12 @@ ol {
 footer {
     color: var(--textcol);
 }
+table,tr,td {
+    color: var(--textcol);
+    border: 1px solid darkgrey;
+    border-collapse: collapse;
+    padding: 3px;
+}
 
 
 a  {
