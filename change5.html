@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+<title>Change ringing n=5</title>
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+</head>
+
+<body>
+
+<p>
+<form method="get" action="index.html"> <button type="submit">Main</button> </form>
+<form method="get" action="permutations.html"> <button type="submit">Permutations</button> </form>
+</p>
+
+
+</br>
+
+
+<h3>Change ringing patterns for n=5 bells</h3>
+
+<!--
+<p>
+The run time of my algorithm grows with a factor of 6 for each additional
+permutation in the pattern, so you won't see anything past length 15 on this
+page anytime soon. My algorithm does not work cumulatively^[+] as it stores
+very little information along the way, which means it is using less memory but
+more time. Hence, it possible to reduce the run time, but still, we will
+probably never see all patterns of length 120 (at least not by brute forcing
+through the factorial(factorial(5)) permutations of permutations). Contact me
+if you want files for lengths greater than 9.
+</p>
+
+<p>
+<b> [+] =
+[</b>
+Having first searched for length L does not yield advantages in the search for
+patterns of other lengths, neither smaller nor larger than L.
+<b>]</b>
+</p>
+
+-->
+
+<table style="width:200px">
+<tr>
+    <td><em>Length of pattern</em></td>
+    <td><em>Nr of patterns</em></td>
+</tr>
+
+
+<tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr>
+    <td><a href="change5_1.html">1</a></td>
+    <td>1</td>
+</tr>
+<tr>
+    <td><a href="change5_2.html">2</a></td>
+    <td>7</td>
+</tr>
+<tr>
+    <td><a href="change5_3.html">3</a></td>
+    <td>21</td>
+</tr>
+<tr>
+    <td><a href="change5_4.html">4</a></td>
+    <td>33</td>
+</tr>
+<tr>
+    <td><a href="change5_5.html">5</a></td>
+    <td>56</td>
+</tr>
+<tr>
+    <td><a href="change5_6.html">6</a></td>
+    <td>137</td>
+</tr>
+<tr>
+    <td><a href="change5_7.html">7</a></td>
+    <td>722</td>
+</tr>
+<tr>
+    <td><a href="change5_8.html">8</a></td>
+    <td>3334</td>
+</tr>
+<tr>
+    <td><a href="change5_9.html">9</a></td>
+    <td>14471</td>
+</tr>
+<tr>
+    <!--    <td><a href="change5_10.html">10</a></td> -->
+    <td>10</td>
+    <td>50265</td>
+</tr>
+<tr>
+    <!--    <td><a href="change5_11.html">11</a></td> -->
+    <td>11</td>
+    <td>182110</td>
+</tr>
+<tr>
+    <!--    <td><a href="change5_12.html">12</a></td> -->
+    <td>12</td>
+    <td>703687</td>
+</tr>
+<tr>
+    <td>13</td>
+    <td>?</td>
+</tr>
+    <!--    <td><a href="change5_12.html">12</a></td> -->
+    <td>14</td>
+    <td>?</td>
+</tr>
+<tr>
+    <td>15</td>
+    <td>?</td>
+</tr>
+<tr>
+    <td>.</td>
+</tr>
+<tr>
+    <td>.</td>
+</tr>
+<tr>
+    <td>.</td>
+</tr>
+<tr>
+    <td>120</td>
+    <td>?</td>
+</tr>
+</table>
+ }}}
+
+
+<center>
+<img src="images/plot_change5.png" class="ImageBorder" alt="animated" width="600" /></br>
+</center>
+
+<hr noshade="">
+<footer>
+<a href="change_about.html">About change ringing patterns</a> &nbsp;
+<a href="change1.html">n=1</a> &nbsp;
+<a href="change2.html">n=2</a> &nbsp;
+<a href="change3.html">n=3</a> &nbsp;
+<a href="change4.html">n=4</a> &nbsp;
+</footer>
+
+</body>
+
+</html>
