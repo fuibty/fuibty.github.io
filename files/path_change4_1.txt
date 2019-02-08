@@ -1,0 +1,4 @@
+Number of patterns = 1
+
+1234
+

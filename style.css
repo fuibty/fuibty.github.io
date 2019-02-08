@@ -1,5 +1,7 @@
 :root {
-    --textcol: #FFE4C4;
+    /*--textcol: #FFE4C4;*/
+    --textcol: #ffe0c2;
+    /*--textcol: #ffffcc;*/
 	--bg: #000010;
     --linkcol: #48D1CC;
     --linkcolalt: #5982c1;
@@ -104,7 +106,8 @@ pre {
     font: monospace;
     font-size: 14px;
     /*background-color: #F7BE81; */
-    background-color: #F2D2A7;
+    /*background-color: #F2D2A7;*/
+    background-color: var(--textcol);
 }
 
 .ImageBorder {
