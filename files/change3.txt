@@ -1,3 +1,5 @@
+Number of patterns = 5
+
 123
 
 123
