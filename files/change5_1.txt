@@ -1,3 +1,4 @@
-Number of patterns = 1
+Number of patterns = 0
 
 12345
+
