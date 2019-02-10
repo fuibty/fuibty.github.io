@@ -1,10 +1,10 @@
 :root {
-    /*--textcol: #FFE4C4;*/
+    /*--textcol: #ffe4c4;*/
     --textcol: #ffe0c2;
     /*--textcol: #ffffcc;*/
 	--bg: #000010;
-    --linkcol: #48D1CC;
-    --linkcolalt: #5982c1;
+    --linkcol: #48d1cc;
+    --linkcolalt: #4c72b0;
 }
 
 
@@ -99,14 +99,15 @@ pre {
     border-radius: 4px;
     padding: 5px;
     display: block;
+    /*width: 200px;*/
     /* background: #1d2021; */
 }
 
 #viewfile  p {
     font: monospace;
     font-size: 14px;
-    /*background-color: #F7BE81; */
-    /*background-color: #F2D2A7;*/
+    /*background-color: #f7be81; */
+    /*background-color: #f2d2a7;*/
     background-color: var(--textcol);
 }
 
