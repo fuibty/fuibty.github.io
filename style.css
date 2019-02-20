@@ -68,6 +68,11 @@ ol {
 footer {
     color: var(--textcol);
 }
+
+big {
+    color: var(--textcol);
+}
+
 table,tr,td {
     color: var(--textcol);
     /* border: 1px solid darkgrey; */
@@ -140,3 +145,4 @@ font-size: 60%;
 .verybigtext{
     font-size: 1000px;
 }
+
