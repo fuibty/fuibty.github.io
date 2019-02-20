@@ -1,4 +1,4 @@
-Number of patterns = 5
+Number of sequences = 5
 
 123
 

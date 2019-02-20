@@ -1,4 +1,4 @@
-Number of patterns = 50
+Number of sequences = 50
 
 12345
 21345

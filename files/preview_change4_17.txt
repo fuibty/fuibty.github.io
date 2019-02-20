@@ -1,4 +1,4 @@
-Number of patterns = 76092
+Number of sequences = 76092
 
 1234
 2134

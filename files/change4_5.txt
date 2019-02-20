@@ -1,2 +1,2 @@
-Number of patterns = 0
+Number of sequences = 0
 

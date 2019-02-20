@@ -1,4 +1,4 @@
-Number of patterns = 7
+Number of sequences = 7
 
 12345
 21345

@@ -98,9 +98,25 @@ pre {
     border: 1px solid var(--linkcol);
     border-radius: 4px;
     padding: 5px;
-    display: block;
-    /*width: 200px;*/
+    display: inline-block;
+    width: auto;
     /* background: #1d2021; */
+}
+
+#widepre pre {
+    background: #000040;
+    border: 1px solid var(--linkcol);
+    border-radius: 4px;
+    padding: 5px;
+    display: block;
+    /*width: auto; */
+    /*width: 350px;*/
+    /* background: #1d2021; */
+}
+
+
+.based-on-text{
+display: inline-block;
 }
 
 #viewfile  p {
@@ -115,4 +131,8 @@ pre {
     border-style:solid;
     border-width: 2px;
     border-color: var(--textcol);
+}
+
+.smalltext {
+font-size: 60%;
 }

@@ -1,4 +1,4 @@
-Number of patterns = 18
+Number of sequences = 18
 
 12345
 21345

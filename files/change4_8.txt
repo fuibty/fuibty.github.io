@@ -1,4 +1,4 @@
-Number of patterns = 106
+Number of sequences = 106
 
 1234
 2134

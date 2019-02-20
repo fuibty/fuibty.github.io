@@ -1,4 +1,4 @@
-Number of patterns =  720
+Count =  720
 
 123
 213

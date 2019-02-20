@@ -1,4 +1,4 @@
-Number of patterns = 186
+Number of sequences = 186
 
 1234
 2134

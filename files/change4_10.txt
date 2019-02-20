@@ -1,4 +1,4 @@
-Number of patterns = 660
+Number of sequences = 660
 
 1234
 2134

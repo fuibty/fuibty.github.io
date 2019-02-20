@@ -1,4 +1,4 @@
-Number of patterns = 120
+Number of sequences = 120
 
 12345
 21345

@@ -1,4 +1,4 @@
-Number of patterns = 28
+Number of sequences = 28
 
 1234
 2134

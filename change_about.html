@@ -4,7 +4,7 @@
 <html>
 
 <head>
-<title>About change ringing patterns</title>
+<title>About change ringing sequences</title>
 <link rel="stylesheet" href="style.css">
 <meta charset="utf-8">
 </head>
@@ -19,30 +19,30 @@
 
 </br>
 
-<h2>About change ringing patterns</h2>
+<h2>About change ringing sequences</h2>
 <p>
-Let n be a positive integer. A <b><em>change ringing pattern for n
-bells</em></b> can be represented by a sequence of permutations of
-the set {1,2,...,n-1,n} that satisfies the following criteria.
+Let n be a positive integer. A <b><em>change ringing sequence for n
+bells</em></b> is a sequence of permutations of the set {1,2,...,n} that
+satisfies the following criteria.
 </p>
 
 <ol>
     <li>
-        The position of each bell from one permutation to the next can stay the
+        The position of each bell (number) from one permutation to the next can stay the
         same or move by at most one place.
     </li>
     <li>
         No permutation can be repeated except for the starting permutation
-        which can be repeated at most once at the end of the pattern to
+        which can be repeated at most once at the end of the sequence to
         accommodate criterion 4.
     </li>
     <li>
-        The sequence must start with the permutation (1,2,...,n-1,n)
+        The sequence must start with the permutation (1,2,...,n)
     </li>
 </ol>
 
 <p>
-Optional and very common criteria
+Optional, but still very common criteria
 </p>
 
 <ol start="4">
@@ -56,56 +56,246 @@ Optional and very common criteria
 
 <hr noshade="">
 
+<p>
+We define an
+<b><em>extent</em></b>
+as a sequence that satisfies all five criteria.
+</p>
 
 <p>
 We define a
-<b><em>full pattern</em></b>
-as a pattern that satisfies all five criteria.
-</p>
-
-
-<p>
-We define a
-<b><em>short pattern</em></b>
-as a pattern that satisfies criteria 1-4, but does not satisfy criterion 5.
-</p>
-
-
-<p>
-We define the <b><em>length</em></b> of a change ringing pattern as the number
-of unique permutations in the pattern.
-</p>
-
-
-<p>
-A full pattern contains all permutations. There are factorial(n) permutations
-of n bells, so the length of a full pattern is always factorial(n).
+<b><em>peal</em></b>
+as a sequence that satisfies criterion 1,2,3,4 and <b>not</b> 5.
 </p>
 
 <p>
-A short pattern does not contain all permutations, hence it has a length less
-than factorial(n).
+We define the <b><em>length</em></b> of a change ringing sequence as the number
+of unique permutations in the sequence.
 </p>
 
 <p>
-We define a <em><b>cyclic pattern</b></em> as a pattern that satisfies
-criterion 1,2,3,4. "Cyclic" because such patterns start and end with the same
-permutation.
+We define a <em><b>cyclic sequence</b></em> as a sequence that satisfies
+criterion 1,2,3,4. These sequences start and end with the same permutation.
 </p>
 
 <p>
-We define a <em><b>path pattern</b></em> as a pattern that satisfies criterion
-1,2,3. "Path" because such patterns are not necessarily cyclic, although every
-cyclic pattern is also a path pattern.
+We define a <em><b>path sequence</b></em> as a sequence that satisfies criterion
+1,2,3 and <b>not</b> 4. None of the path sequences are cyclic, although every cyclic
+sequence becomes a path sequence if you remove it's last and repeated
+permutation, hence some portion of the path sequences can be extended to become
+cyclic.
 </p>
 
+<!--
 <p>
-We define a <em><b>non-cyclic pattern</b></em> as a pattern that satisfies
-criteria 1,2,3, but does not satisfy criterion 4. I.e. a non-cyclic pattern is
-a path pattern that is not cyclic.
+We define a <em><b>noncyclic sequence</b></em> as a path sequence that has an
+ending permutation cannot immeadiately transition to it's starting permutation.
+Thus we cannot append the starting permutation without breaking criterion 1.
 </p>
+-->
+
 <hr noshade="">
 
+<p>
+Criterion 1 heavily limits the number of allowed transitions (from one permutation to another).
+</p>
+
+<p>
+For n=2 there is only 1 possible transition.
+</p>
+<code><pre>
+ab
+><
+ba
+</pre></code>
+
+<p>
+For n=3 there are 2 possible transitions.
+</p>
+<code><pre>
+abc
+><
+bac
+</pre></code>
+
+<code><pre>
+abc
+ ><
+acb
+</pre></code>
+
+<p>
+For n=4 there are 4.
+</p>
+
+<code><pre>
+abcd
+><
+bacd
+</pre></code>
+
+<code><pre>
+abcd
+ ><
+acbd
+</pre></code>
+
+<code><pre>
+abcd
+  ><
+abdc
+</pre></code>
+
+<code><pre>
+abcd
+><><
+badc
+</code></pre>
+
+<p>
+There are 24 permutations of 4 bells, thus most permutations are out of reach in a single transition.
+</p>
+
+<p class="smalltext">
+(There are transitions for couple larger n's in the html code.)
+</p>
+
+<!--
+<p>
+For n=5 we have 7.
+</p>
+
+<code><pre>
+abcde
+><
+bacde
+</pre></code>
+
+<code><pre>
+abcde
+ ><
+acbde
+</pre></code>
+
+<code><pre>
+abcde
+  ><
+abdce
+</pre></code>
+
+<code><pre>
+abcde
+   ><
+abced
+</pre></code>
+
+<code><pre>
+abcde
+><><
+badce
+</pre></code>
+
+<code><pre>
+abcde
+>< ><
+baced
+</pre></code>
+
+<code><pre>
+abcde
+ ><><
+acbed
+</pre></code>
+
+<p>
+For n=6 we have 12.
+</p>
+
+<code><pre>
+abcdef
+><
+bacdef
+</pre></code>
+
+<code><pre>
+abcdef
+ ><
+acbdef
+</pre></code>
+
+<code><pre>
+abcdef
+  ><
+abdcef
+</pre></code>
+
+<code><pre>
+abcdef
+   ><
+abcedf
+</pre></code>
+
+<code><pre>
+abcdef
+    ><
+abcdfe
+</pre></code>
+
+<code><pre>
+abcdef
+><><
+badcef
+</pre></code>
+
+<code><pre>
+abcdef
+>< ><
+bacedf
+</pre></code>
+
+<code><pre>
+abcdef
+><  ><
+bacdfe
+</pre></code>
+
+<code><pre>
+abcdef
+ ><><
+acbedf
+</pre></code>
+
+<code><pre>
+abcdef
+ >< ><
+acbdfe
+</pre></code>
+
+<code><pre>
+abcdef
+  ><><
+abdcfe
+</pre></code>
+
+<code><pre>
+abcdef
+><><><
+badcfe
+</pre></code>
+
+
+<p>
+The number of possible transitions for a given n turns out to be F(n+1)-1
+where F(n) is the
+<a href="http://oeis.org/A000045">Fibonacci numbers with F(0)=0 and F(1)=1.</a>.
+This sequence is
+<a href="http://oeis.org/A000071">A000071</a>
+in the On-line Encyclopedia of Integer Sequences (OEIS).
+</p>
+
+-->
+
+<hr noshade="">
 
 <center>
 <a href="change1.html">n=1</a> &nbsp;
