@@ -136,3 +136,7 @@ display: inline-block;
 .smalltext {
 font-size: 60%;
 }
+
+.verybigtext{
+    font-size: 1000px;
+}
