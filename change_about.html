@@ -20,6 +20,81 @@
 </br>
 
 <h2>About change ringing sequences</h2>
+
+<p>
+Examples of change ringing sequences for 3,4 and 5 bells.
+</p>
+
+<code><pre>
+123
+132
+312
+321
+231
+213
+123
+</pre></code>
+
+<code><pre>
+1234
+1243
+2134
+2143
+2413
+2431
+4213
+4231
+4321
+4312
+4132
+4123
+1423
+1432
+1342
+3124
+3214
+2314
+2341
+3241
+3421
+3412
+3142
+1324
+1234
+</pre></code>
+
+<code><pre>
+12345
+12354
+13245
+13254
+31245
+31254
+32145
+32154
+23154
+21354
+12345
+</pre></code>
+
+<p>
+
+Change ringing is a very specific way of making music with an arbitrary
+(natural) number of uniquely pitched bells (labeled with the numbers 1,2,...,n
+in descending order of pitch). The bells are rung only one at the time in rapid
+succession with regular time intervals. No bell is allowed to ring again before
+all bells have been rung. Thus this kind of music consists of sequences of what
+is called <em>changes</em>, <em>rows</em> or <em>permutations</em>, that is,
+the act of ringing through all the n bells once in some order. All permutations
+are allowed, but not all sequences of permutations are allowed. For starters,
+you cannot repeat a previously rung permutation within a sequence, which gives
+these sequences a maximum length of factorial(n). Still, most of the sequences
+satisfying this criterion are not allowed due to several more criteria. Let us
+take a look at a complete definition to see exactly what types of sequences of
+permutations that are allowed in change ringing.
+
+</p>
+
 <p>
 Let n be a positive integer. A <b><em>change ringing sequence for n
 bells</em></b> is a sequence of permutations of the set {1,2,...,n} that
@@ -42,7 +117,7 @@ satisfies the following criteria.
 </ol>
 
 <p>
-Optional criteria, that differentiates types of sequences.
+Optional criteria that differentiates types of sequences.
 </p>
 
 <ol start="4">
@@ -53,6 +128,13 @@ Optional criteria, that differentiates types of sequences.
         The sequence must contain all permutations.
     </li>
 </ol>
+
+<p>
+There exists a few more optional criteria (
+<a href="https://math.ch/TMU2017/Campanology_Ringing_the_changes.pdf">Look Here</a>
+), but they are not relevant for this project. Also, sometimes criterion 3 is
+viewed as optional instead of mandatory.
+</p>
 
 <hr noshade="">
 
@@ -75,7 +157,7 @@ of unique permutations in the sequence.
 
 <p>
 We define a <b><em>cyclic sequence</em></b> as a sequence that satisfies
-criterion 1,2,3,4. These sequences start and end with the same permutation.
+criterion 1,2,3,4. These sequences start and end with (1,2,...,n).
 </p>
 
 <p>
@@ -106,11 +188,12 @@ still satisfying criterion 1,2,3.
 <hr noshade="">
 
 <p>
-Criterion 1 heavily limits the number of allowed transitions (from one permutation to another).
+Criterion 1 heavily limits the number of <b><em>allowable transitions</em></b> (also
+called <b><em>allowable transition rules</em></b>) from one permutation to another .
 </p>
 
 <p>
-For n=2 there is only 1 possible transition.
+For n=2 there is only 1 allowable transition.
 </p>
 <code><pre>
 ab
@@ -119,7 +202,7 @@ ba
 </pre></code>
 
 <p>
-For n=3 there are 2 possible transitions.
+For n=3 there are 2 allowable transitions.
 </p>
 <code><pre>
 abc
@@ -159,150 +242,34 @@ abdc
 abcd
 ><><
 badc
-</code></pre>
+</pre></code>
+
 
 <p>
-There are 24 permutations of 4 bells, thus most permutations are out of reach in a single transition.
-</p>
-
-<p class="smalltext">
-(There are transitions for a couple larger n's in the html code.)
+There are 24 permutations of four bells, thus most permutations are out of
+reach in a single transition. This continues to be the case for larger numbers
+of bells, as the ratio of number of allowable transition rules to the number of
+permutations tends to zero as n tends to infinity.
+[<b>SPOILER ALERT!</b> (n+1)-th element of
+<a href="http://oeis.org/A000071">A000071</a>
+divided by factorial(n)].
 </p>
 
 <!--
 <p>
-For n=5 we have 7.
-</p>
-
-<code><pre>
-abcde
-><
-bacde
-</pre></code>
-
-<code><pre>
-abcde
- ><
-acbde
-</pre></code>
-
-<code><pre>
-abcde
-  ><
-abdce
-</pre></code>
-
-<code><pre>
-abcde
-   ><
-abced
-</pre></code>
-
-<code><pre>
-abcde
-><><
-badce
-</pre></code>
-
-<code><pre>
-abcde
->< ><
-baced
-</pre></code>
-
-<code><pre>
-abcde
- ><><
-acbed
-</pre></code>
-
-<p>
-For n=6 we have 12.
-</p>
-
-<code><pre>
-abcdef
-><
-bacdef
-</pre></code>
-
-<code><pre>
-abcdef
- ><
-acbdef
-</pre></code>
-
-<code><pre>
-abcdef
-  ><
-abdcef
-</pre></code>
-
-<code><pre>
-abcdef
-   ><
-abcedf
-</pre></code>
-
-<code><pre>
-abcdef
-    ><
-abcdfe
-</pre></code>
-
-<code><pre>
-abcdef
-><><
-badcef
-</pre></code>
-
-<code><pre>
-abcdef
->< ><
-bacedf
-</pre></code>
-
-<code><pre>
-abcdef
-><  ><
-bacdfe
-</pre></code>
-
-<code><pre>
-abcdef
- ><><
-acbedf
-</pre></code>
-
-<code><pre>
-abcdef
- >< ><
-acbdfe
-</pre></code>
-
-<code><pre>
-abcdef
-  ><><
-abdcfe
-</pre></code>
-
-<code><pre>
-abcdef
-><><><
-badcfe
-</pre></code>
-
-
-<p>
-The number of possible transitions for a given n turns out to be F(n+1)-1
+The <b>number of allowable transition rules</b> for a given n turns out to be F(n+1)-1
 where F(n) is the
 <a href="http://oeis.org/A000045">Fibonacci numbers with F(0)=0 and F(1)=1.</a>.
 This sequence is
 <a href="http://oeis.org/A000071">A000071</a>
 in the On-line Encyclopedia of Integer Sequences (OEIS).
 </p>
-
 -->
+
+<h3>Resources</h3>
+
+<a href="https://www.youtube.com/watch?v=3lyDCUKsWZs">Video (6:28) from Simons Foundation</a></br>
+<a href="https://math.ch/TMU2017/Campanology_Ringing_the_changes.pdf"> Fabia Weber's bachelor thesis: Campanology - Ringing the changes</a>
 
 <hr noshade="">
 
