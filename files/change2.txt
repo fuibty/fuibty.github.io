@@ -1,6 +1,9 @@
-Number of sequences = 2
+Number of sequences = 3
 
 12
+
+12
+21
 
 12
 21

@@ -42,7 +42,7 @@ satisfies the following criteria.
 </ol>
 
 <p>
-Optional, but still very common criteria
+Optional criteria, that differentiates types of sequences.
 </p>
 
 <ol start="4">
@@ -74,25 +74,34 @@ of unique permutations in the sequence.
 </p>
 
 <p>
-We define a <em><b>cyclic sequence</b></em> as a sequence that satisfies
+We define a <b><em>cyclic sequence</em></b> as a sequence that satisfies
 criterion 1,2,3,4. These sequences start and end with the same permutation.
 </p>
 
 <p>
-We define a <em><b>path sequence</b></em> as a sequence that satisfies criterion
-1,2,3 and <b>not</b> 4. None of the path sequences are cyclic, although every cyclic
-sequence becomes a path sequence if you remove it's last and repeated
-permutation, hence some portion of the path sequences can be extended to become
-cyclic.
+We define a <b><em>path sequence</em></b> as a sequence that satisfies criterion
+1,2,3 and <b>not</b> 4. None of the path sequences are cyclic, but every cyclic
+sequence becomes a path sequence if you remove it's ending permutation.
 </p>
 
-<!--
 <p>
-We define a <em><b>noncyclic sequence</b></em> as a path sequence that has an
-ending permutation cannot immeadiately transition to it's starting permutation.
-Thus we cannot append the starting permutation without breaking criterion 1.
+We define a <b><em>noncappable sequence</em></b> as a path sequence that has an
+ending permutation that cannot immeadiately transition to the starting permutation.
+Thus we cannot append the starting permutation (cap it and make it cyclic)
+without breaking criterion 1.
 </p>
--->
+
+<p>
+We define a <b><em>nonclosable sequence</em></b> as a path sequence that cannot
+be made cyclic by appending any number of permutations.
+</p>
+
+<p>
+We define a <b><em>nonfillable sequence</em></b> as a path sequence that cannot
+be made to satisfy criterion 5 by appending any number of permutations while
+still satisfying criterion 1,2,3.
+</p>
+
 
 <hr noshade="">
 
